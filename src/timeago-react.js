@@ -36,7 +36,7 @@ export default class TimeAgo extends React.Component {
       } else {
         this.timeagoDom.setAttribute('datetime', datetime);
       }
-      this.timeagoInstance.render(this.timeagoDom);
+      this.timeagoInstance.render(this.timeagoDom, locale);
     }
   }
   // remove
@@ -72,6 +72,6 @@ TimeAgo.propTypes = {
 };
 
 TimeAgo.defaultProps = {
-  live: true,
+  live: false,
   locale: 'en'
 };
