@@ -36,7 +36,7 @@ export default class TimeAgo extends React.Component {
       } else {
         this.timeagoDom.setAttribute('datetime', datetime);
       }
-      this.timeagoInstance.render(this.timeagoDom, locale);
+      this.timeagoInstance.render(this.timeagoDom);
     }
   }
   // remove
